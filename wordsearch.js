@@ -1,4 +1,4 @@
-const transpose = function (matrix) {
+const transpose = function(matrix) {
   const rows = matrix.length;
   const columns = matrix[0].length;
   const result = [];
@@ -23,30 +23,25 @@ const wordSearch = (letters, word) => {
 
   for (l of horizontalJoin) {
     if (l.includes(word)) {
-      console.log(true);
       return true;
     }
   }
   for (l of verticalJoin) {
     if (l.includes(word)) {
-      console.log(true);
       return true;
     }
   }
   for (l of horizontalReverse) {
     if (l.includes(word)) {
-      console.log(true);
       return true;
     }
   }
   for (l of verticalReverse) {
     if (l.includes(word)) {
-      console.log(true);
       return true;
     }
   }
 
-  console.log(false);
   return false;
 };
 
